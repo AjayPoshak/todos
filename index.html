@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0" /> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <section class="trello">
+            <header class="header">
+                <h1>Tasks List</h1>
+                <button class="btn" type="button" onclick="newTaskHandler()">New Task</button>
+            </header>
+            <article class="lists-container" id="js-panels"></article>
+        </section>
+        <div id="modal-root"></div>
+    </body>
+    <script src="./index.js" type="module"></script>
+</html>
