@@ -9,13 +9,8 @@ import Storage from './storage.js'
  * in separation of concerns.
  */
 class DataKeeper {
-    static instance
     constructor() {
-        if(typeof instance !== 'undefined') {
-            return instance
-        }
         this.listeners = []
-        this.instance = this
         this.keyName = 'todolist'
         this.storage = new Storage()
         this.data = this.storage.get(this.keyName)
